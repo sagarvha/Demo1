@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestSuite]">
+  <test name="testGuru">
+    <classes>
+      <class name="com.qa.crm.test.contactpagetest"/>
+      <class name="com.qa.crm.test.homepagetest"/>
+      <class name="com.qa.crm.test.Loginpagetest"/>
+    </classes>
+  </test> <!-- testGuru -->
+  <test name="testGuru(failed)">
+    <classes>
+      <class name="com.qa.crm.test.Loginpagetest">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.qa.crm.test.Loginpagetest -->
+      <class name="com.qa.crm.test.contactpagetest">
+        <methods>
+          <include name="selectcheckbocTest"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.qa.crm.test.contactpagetest -->
+      <class name="com.qa.crm.test.homepagetest">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.qa.crm.test.homepagetest -->
+    </classes>
+  </test> <!-- testGuru(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->
